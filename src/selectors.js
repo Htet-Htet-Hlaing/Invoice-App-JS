@@ -16,5 +16,7 @@ export const recordTotal = document.querySelector("#recordTotal");
 export const recordTax = document.querySelector("#recordTax");
 export const recordNetTotal = document.querySelector("#recordNetTotal");
 export const recordRemoveBtn = document.querySelector(".record-remove");
+export const checkout = document.querySelector("#checkout");
+
 
 

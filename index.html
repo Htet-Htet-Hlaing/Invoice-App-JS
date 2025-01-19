@@ -18,7 +18,7 @@
       </header>
       <!-- Body -->
       <section class="">
-        <div class="container mx-auto">
+        <div class="container mx-auto block print:hidden">
           <form id="createRecordForm">
             <div class="grid grid-cols-4 gap-3 border rounded-lg shadow-sm p-5">
               <!-- Select -->
@@ -78,7 +78,7 @@
                   <th scope="col" class="px-6 py-3 text-end">Price</th>
                   <th scope="col" class="px-6 py-3 text-end">Quantity</th>
                   <th scope="col" class="px-6 py-3 text-end">Cost</th>
-                  <th scope="col" class="px-6 py-3">Action</th>
+                  <th scope="col" class="px-6 py-3 table-cell print:hidden">Action</th>
                 </tr>
               </thead>
               <tbody id="recordGroup">
@@ -131,6 +131,7 @@
               </tfoot>
             </table>
           </div>
+          <p class=" hidden print:block">၀ယ်ယူအားပေးမှုကို  ကျေးဇူးတင်ပါသည်ရှင့် IT Creation Teamမှ</p>
         </div>
       </section>
 
@@ -212,7 +213,7 @@
       </section>
       <!-- Footer -->
       <footer class="container mt-auto">
-        <div class="flex justify-end gap-3 mb-3">
+        <div class="flex justify-end gap-3 mb-3 block print:hidden">
           <button
             type="button"
             id="manageInventoryBtn"
@@ -221,10 +222,11 @@
             Manage Inventory
           </button>
           <button
+            id="checkout"
             type="button"
             class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
-            Print
+            checkout
           </button>
         </div>
       </footer>
@@ -287,7 +289,7 @@
           <td class="record-cost px-6 py-4 text-end">5000</td>
           <td class="px-6 py-4">
             <button
-              class="record-remove font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              class="record-remove font-medium table-cell print:hidden text-blue-600 dark:text-blue-500 hover:underline"
             >
               Remove
             </button>
